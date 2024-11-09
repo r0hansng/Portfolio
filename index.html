@@ -56,15 +56,16 @@
                         <a style="color:inherit; text-decoration: inherit;"target="_blank" rel="noopener noreferrer" href="mailto:rohan.singh.en@gmail.com">rohan.singh.en@gmail.com</a>
                     </span>
                 </p>
-                <form style="gap:.75rem; flex-direction: column; display: flex;">
-                    <input class="email" name="mail" required type="email" placeholder="Enter your email">
-                    <textarea class="message" name="msg" required placeholder="Enter your message"></textarea>
-                    <button class="send-button">
+                <form style="gap:.75rem; flex-direction: column; display: flex;" onsubmit="handleSubmit(event)">
+                    <input class="email" name="mail" required type="email" placeholder="Enter your email" onchange="userEmail = this.value">
+                    <textarea class="message" name="msg" required placeholder="Enter your message" onchange="msg = this.value"></textarea>
+                    <button class="send-button" type="submit">
                         Submit
-                        <img class="send-mail-icon"src="src/Styles/Pictures/send-svgrepo-com.svg" style="height:12px; width:12px;"></button>
+                        <img class="send-mail-icon" src="src/Styles/Pictures/send-svgrepo-com.svg" style="height:12px; width:12px;"></button>
                 </form>
             </div>
         </div>
     <footer class="foot"><small class="mb-2 block text-xs">© 2024 Rohan. All rights reserved.</small></footer>
+    <script src="src/JS/script.js"></script>
 </body>
 </html>
