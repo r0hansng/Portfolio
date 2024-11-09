@@ -1,5 +1,5 @@
 let userEmail = '';
-let msg = '';
+let msgs = '';
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -13,7 +13,7 @@ function handleSubmit(e) {
             my_email: 'contact.me.rohansingh@gmail.com',
             my_password: 'qgnk jhxv zgko uqqe',
             user_email: userEmail,
-            msg: msg
+            msg: msgs
         }),
     })
     .then(response => response.json())

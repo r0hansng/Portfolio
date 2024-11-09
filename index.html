@@ -58,7 +58,8 @@
                 </p>
                 <form style="gap:.75rem; flex-direction: column; display: flex;" onsubmit="handleSubmit(event)">
                     <input class="email" name="mail" required type="email" placeholder="Enter your email" onchange="userEmail = this.value">
-                    <textarea class="message" name="msg" required placeholder="Enter your message" onchange="msg = this.value"></textarea>
+                    <textarea class="message" name="message" required placeholder="Enter your message" 
+                    onchange="msgs = this.value"></textarea>
                     <button class="send-button" type="submit">
                         Submit
                         <img class="send-mail-icon" src="src/Styles/Pictures/send-svgrepo-com.svg" style="height:12px; width:12px;"></button>
