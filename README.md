@@ -1,6 +1,6 @@
 # HTML-CSS-Javascript elementary portfolio website. 
 
-## A responsive website written in HTML which lists all my skills and projects.
+## A responsive website written in HTML which lists all my skills, experience and projects.
 
 This website was created as a graded college project given by my professor. This website was basically made by me to showcase my projects and expreience in one place and utilise my newly accquired skills in Web-Dev.
 
