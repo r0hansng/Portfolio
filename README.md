@@ -1,4 +1,4 @@
-# HTML CSS Javascript elementary portfolio website. 
+# HTML-CSS-Javascript elementary portfolio website. 
 
 ## A responsive website written in HTML which lists all my skills and projects.
 
