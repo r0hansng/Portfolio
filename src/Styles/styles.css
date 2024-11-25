@@ -20,6 +20,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    margin: 0;
 }
 h1{
     color:white;
@@ -390,9 +391,112 @@ h1{
     gap: 2.5rem;
 }
 
-#computer-science-degree{
+.experience-card{
     padding: 1.25rem;
     width: 100%;
     border: 1px solid #374151;
     border-radius: 0.5rem;
+}
+
+.experience-header{
+    text-transform: capitalize; 
+    font-weight: 600; 
+    font-size: 1.5rem; 
+    line-height: 2rem;
+    margin:0;
+}
+
+.experience-location{
+    font-weight: 400; 
+    margin-top: 0.5rem; 
+    color: white;
+}
+
+.experience-institution{
+    color: white; 
+    margin-top: 0.25rem;
+}
+
+.experience-description{
+    --tw-text-opacity: 1; 
+    color: rgb(55 65 81 / var(--tw-text-opacity)); 
+    font-weight: 400; 
+    margin-top: 1rem;
+}
+
+.experience-duration{
+    font-weight: 400; 
+    margin-top: 1.25rem; 
+    color: white;
+}
+
+
+/* Projects Section Homepage */
+
+#project-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+}
+
+#my-projects{
+    margin-bottom: 1.75rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+#project-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.project-card{
+    min-width: 640px;
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    width: 39%;
+    color: hsl(var(--card-foreground));
+    background-color: hsl(var(--card));
+    --card: 0 0% 0%;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --card-foreground: 210 40% 98%;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    overflow: hidden;
+}
+
+.project-thumbnail{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-description-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.project-description{
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: .5rem;
 }
