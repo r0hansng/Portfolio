@@ -125,19 +125,59 @@ section{
     padding-right: 1rem; 
     line-height: 1.25rem; 
     font-size: 0.875rem;
-    background: linear-gradient(150deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:2px solid rgba(255, 255, 255, 0.18);
+    border:1.5px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     transition: 0.5s;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+        var(--angle),
+        #070707,
+        #3f3f3f
+      ) border-box;
+  animation: 8s rotate linear infinite;
 }
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+}
+
 .available-button:hover{
     cursor: pointer;
     border: 2px solid rgb(31, 42, 61);
 
 }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.blinking-circle {
+    color: green;
+    animation: blink 2.5s infinite;
+}
+
 .two-buttons{
     display: flex;
     flex-direction: row;
