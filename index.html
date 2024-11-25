@@ -10,116 +10,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <nav class="navbar">
-            <div class="navdiv">
-                <a href="#"><div class ="logo">R</div></a>
-                <div class="menu-items">
-                    <a href="myprojects.html">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="about.html">About Me</a></li>
-                    <a href="#contact">Contact</a>
+    <div style="overflow: hidden;">
+        <div id="nav-container">
+            <div id="navdiv">
+                <div id="button-container">
+                    <a href="#">
+                        <div class="logo">
+                        R
+                    </div>
+                    <div id="menu-items">
+                        <a href="myprojects.html">
+                            Projects
+                        </a>
+                        <a href="/#experience">
+                            Experience
+                        </a>
+                        <a href="about.html">
+                            About Me
+                        </a></li>
+                        <a href="/#contact">
+                            Contact
+                        </a>
+                    </div>
+                </a>
                 </div>
-                <div class="socials">
+                <div id="social-container">
                     <a href="https://github.com/r0hansng" target="_blank"><img class="social-logo" src="src/Styles/Pictures/github.png"></a>
                     <a href="https://www.linkedin.com/in/rohansng/" target="_blank"><img class="social-logo" src="src/Styles/Pictures/linkedin-app-white-icon.svg"></a>
                     <a href="https://x.com/r0hansng" target="_blank"><img class="social-logo" src="src/Styles/Pictures/x-social-media-white-icon.svg"></a>
                 </div>
             </div>
-        </nav>
-        <section id="hero-section">
-            <div class="main-heading">
-                <button class="available-button"style="">
-                    <div class="available">
-                        <div class="blinking-circle" style="background-color: rgb(0, 255, 0); width:8px; height: 8px; border-radius: 50%;"></div>
-                        Available for work
-                    </div>
-                </button>
-                <div>Rohan Singh</div>
-                <div>Full-Stack Developer</div>
-                <p class="description">I am passionate about crafting innovative fullstack web applications,
-                    merging creativity and functionality to deliver exceptional user experiences.</p>
-                <div class="two-buttons">
-                    <a href="https://drive.google.com/file/d/1EbuubdYfPklnH8oUXLTvDtz4ecRLwbII/view?usp=drive_link" target="_blank">
-                        <img src="src/Styles/Pictures/download.png" style="height:15px;">Download My Resume</a>
-                    <a href="#contact">
-                        <img src="src/Styles/Pictures/mail.png" style="height:15px;">
-                        Contact Me</a>
-                </div>
-            </div>
-        </section>
-        <!-- Projects Section -->
-        <div id="project-section-header">
-            <h1 id="my-projects">My Projects</h1>
-            <div id="project-card-container">
-                <div class="project-card">
-                    <img class="project-thumbnail" src="src/Styles/Pictures/Dev Union.png" alt="Project Thumbnail" width="400" height="500">
-                    <div class="project-description-container">
-                        <div>
-                            <h3>Dev Union</h3>
-                            <p class="project-description">Dev Union is a full-stack app enabling users to create chat rooms and collaborate on projects with real-time video calls and screen-sharing.</p>
-                        </div>
-                        <div class="project-technology-container">
-                            <div class="technology-header">Technologies Used:</div>
-                            <div class="shield-container">
-                                <div class="technology-name">React</div>
-                                <div class="technology-name">Next.js</div>
-                                <div class="technology-name">PostgresSQL</div>
-                                <div class="technology-name">Tailwind</div>
-                                <div class="technology-name">Prisma</div>
-                            </div>
-                            <div class="project-link-button">
-                                <a class="project-github" target="_blank" href="https://github.com/MayankUghade/Dev-Union">
-                                    <img src="src/Styles/Pictures/GitHub Logo.png" alt="GitHub" height="20px">GitHub
-                                </a>
-                                <a class="live-demo-button" target="_blank" href="https://dev-union.vercel.app/">
-                                    <img src="src/Styles/Pictures/Globe Vector Icon PNG.jpeg" alt="Live Icon" height="21px">Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a id="more-projects-button" href="/myprojects.html">More Projects</a>
         </div>
-        <!-- Experience Section -->
-        <div class="experience-section" id="experience">
-            <h1 style="font-weight: 700; font-size:1.875rem; line-height:2.25rem; margin:0;">My Experience</h1>
-            <div>
-                <div class="experience-content-cards-section"></div>
-                <div>
-                    <section style="padding-top: 120px; padding-bottom: 120px; display: flex; gap: 2.rem; justify-content: center; align-items: center; flex-direction: column; scroll-margin-top: 7rem; width: 100%;">
-                        <!-- Experience Cards -->
-                        <div id="experience-card-container">
+        <div id="super-container">
+            <section id="hero-section">
+                <div class="main-heading">
+                    <button class="available-button"style="">
+                        <div class="available">
+                            <div class="blinking-circle" style="background-color: rgb(0, 255, 0); width:8px; height: 8px; border-radius: 50%;"></div>
+                            Available for work
+                        </div>
+                    </button>
+                    <div>Rohan Singh</div>
+                    <div>Full-Stack Developer</div>
+                    <p class="description">I am passionate about crafting innovative fullstack web applications,
+                        merging creativity and functionality to deliver exceptional user experiences.</p>
+                    <div class="two-buttons">
+                        <a href="https://drive.google.com/file/d/1EbuubdYfPklnH8oUXLTvDtz4ecRLwbII/view?usp=drive_link" target="_blank">
+                            <img src="src/Styles/Pictures/download.png" style="height:15px;">Download My Resume</a>
+                        <a href="#contact">
+                            <img src="src/Styles/Pictures/mail.png" style="height:15px;">
+                            Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects Section -->
+            <div id="project-section-header">
+                <h1 id="my-projects">My Projects</h1>
+                <div id="project-card-container">
+                    <div class="project-card">
+                        <img class="project-thumbnail" src="src/Styles/Pictures/Dev Union.png" alt="Project Thumbnail" width="400" height="500">
+                        <div class="project-description-container">
                             <div>
-                                <div class="experience-card">
-                                    <h1 class="experience-header">Computer Science Degree</h1>
-                                    <p class="experience-location">Delhi NCR, India</p>
-                                    <p class="experience-institution">Newton School of Technology</p>
-                                    <p class="experience-description">I have recently started my computer engineering degree, currently I am in my first year.</p>
-                                    <p class="experience-duration">2024 - present</p>
+                                <h3>Dev Union</h3>
+                                <p class="project-description">Dev Union is a full-stack app enabling users to create chat rooms and collaborate on projects with real-time video calls and screen-sharing.</p>
+                            </div>
+                            <div class="project-technology-container">
+                                <div class="technology-header">Technologies Used:</div>
+                                <div class="shield-container">
+                                    <div class="technology-name">React</div>
+                                    <div class="technology-name">Next.js</div>
+                                    <div class="technology-name">PostgresSQL</div>
+                                    <div class="technology-name">Tailwind</div>
+                                    <div class="technology-name">Prisma</div>
+                                </div>
+                                <div class="project-link-button">
+                                    <a class="project-github" target="_blank" href="https://github.com/MayankUghade/Dev-Union">
+                                        <img src="src/Styles/Pictures/GitHub Logo.png" alt="GitHub" height="20px">GitHub
+                                    </a>
+                                    <a class="live-demo-button" target="_blank" href="https://dev-union.vercel.app/">
+                                        <img src="src/Styles/Pictures/Globe Vector Icon PNG.jpeg" alt="Live Icon" height="21px">Live Demo
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-        </div>
-        <div id="contact">
-            <div id="contact-me-section">
-                <h1 class="contact-me-heading">Contact Me</h1>
-                <p class="mail-line">Feel free to fill out the form below to get in touch or just say hello at
-                    <span style="text-decoration: underline;--tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity));">
-                        <a style="color:inherit; text-decoration: inherit;"target="_blank" rel="noopener noreferrer" href="mailto:rohan.singh.en@gmail.com">rohan.singh.en@gmail.com</a>
-                    </span>
-                </p>
-                <form style="gap:.75rem; flex-direction: column; display: flex;" onsubmit="handleSubmit(event)">
-                    <input class="email" name="mail" required type="email" placeholder="Enter your email" onchange="userEmail = this.value">
-                    <textarea class="message" name="message" required placeholder="Enter your message" 
-                    onchange="msgs = this.value"></textarea>
-                    <button class="send-button" type="submit">
-                        Submit
-                        <img class="send-mail-icon" src="src/Styles/Pictures/send-svgrepo-com.svg" style="height:12px; width:12px;"></button>
-                </form>
+                <a id="more-projects-button" href="/myprojects.html">More Projects</a>
+            </div>
+            <!-- Experience Section -->
+            <div class="experience-section" id="experience">
+                <h1 style="font-weight: 700; font-size:1.875rem; line-height:2.25rem; margin:0;">My Experience</h1>
+                <div>
+                    <div class="experience-content-cards-section"></div>
+                    <div>
+                        <section style="padding-top: 120px; padding-bottom: 120px; display: flex; gap: 2.rem; justify-content: center; align-items: center; flex-direction: column; scroll-margin-top: 7rem; width: 100%;">
+                            <!-- Experience Cards -->
+                            <div id="experience-card-container">
+                                <div>
+                                    <div class="experience-card">
+                                        <h1 class="experience-header">Computer Science Degree</h1>
+                                        <p class="experience-location">Delhi NCR, India</p>
+                                        <p class="experience-institution">Newton School of Technology</p>
+                                        <p class="experience-description">I have recently started my computer engineering degree, currently I am in my first year.</p>
+                                        <p class="experience-duration">2024 - present</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+            </div>
+            <div id="contact">
+                <div id="contact-me-section">
+                    <h1 class="contact-me-heading">Contact Me</h1>
+                    <p class="mail-line">Feel free to fill out the form below to get in touch or just say hello at
+                        <span style="text-decoration: underline;--tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity));">
+                            <a style="color:inherit; text-decoration: inherit;"target="_blank" rel="noopener noreferrer" href="mailto:rohan.singh.en@gmail.com">rohan.singh.en@gmail.com</a>
+                        </span>
+                    </p>
+                    <form style="gap:.75rem; flex-direction: column; display: flex;" onsubmit="handleSubmit(event)">
+                        <input class="email" name="mail" required type="email" placeholder="Enter your email" onchange="userEmail = this.value">
+                        <textarea class="message" name="message" required placeholder="Enter your message" 
+                        onchange="msgs = this.value"></textarea>
+                        <button class="send-button" type="submit">
+                            Submit
+                            <img class="send-mail-icon" src="src/Styles/Pictures/send-svgrepo-com.svg" style="height:12px; width:12px;"></button>
+                    </form>
+                </div>
             </div>
         </div>
     <footer class="foot"><small class="mb-2 block text-xs">© 2024 Rohan. All rights reserved.</small></footer>
