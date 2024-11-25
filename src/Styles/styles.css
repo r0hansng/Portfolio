@@ -24,7 +24,7 @@ p {
 h1{
     color:white;
 }
-section{
+#hero-section{
     background-image: radial-gradient(rgb(47, 46, 46), rgb(0, 0, 0), black);
 }
 /* Navigation bar */
@@ -130,13 +130,13 @@ section{
     border-radius: 20px;
     border:1.5px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: 0.5s;
     background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
         var(--angle),
         #070707,
         #3f3f3f
       ) border-box;
-  animation: 8s rotate linear infinite;
+    animation: 8s rotate linear infinite;
+    transition: 2s;
 }
 
 @keyframes rotate {
@@ -149,7 +149,6 @@ section{
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
-}
 }
 
 .available-button:hover{
@@ -360,4 +359,40 @@ section{
     margin:0;
     margin-bottom:.5rem;
     border-bottom: solid 1px rgb(31, 42, 61);
+}
+
+/* Experience Section */
+
+.experience-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 7rem;
+    margin-top: 200px;
+}
+
+.experience-content-card-section{
+    min-width: 640px;
+    display: flex;
+    position: relative;
+    max-width: 56rem;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experience-card-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 2.5rem;
+}
+
+#computer-science-degree{
+    padding: 1.25rem;
+    width: 100%;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
 }
