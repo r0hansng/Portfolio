@@ -601,3 +601,48 @@ h1{
     margin-top: 0.75rem;
     text-decoration: inherit;
 }
+
+/* Projects Page */
+
+#container-project-page{
+    opacity: 1;
+    transform: none;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+#container-cover{
+    position: fixed;
+    z-index: 9999;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    pointer-events: none;
+}
+
+#project-page-header{
+    text-decoration-line: underline;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0;
+}
+
+#project-page-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    gap: 1.25rem;
+}
