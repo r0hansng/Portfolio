@@ -1,0 +1,124 @@
+*{
+    text-decoration: none;
+    font-family:"Inter", sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+    max-width: 100%;
+}
+body{
+    background-color: black;
+    margin:0;
+}
+div{
+    display: block;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin: 0;
+}
+h1{
+    color:white;
+}
+
+#contact{
+    width:100%;
+    padding:1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}  
+
+#contact-me-section{
+    padding: 0.5rem;
+    scroll-margin-top: 7rem;
+    max-width: 48rem;
+    width: 100%;
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me-heading{
+    margin:0;    
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mail-line{
+    --muted-foreground: 215 20.2% 65.1%;
+    color: hsl(var(--muted-foreground));
+    margin:0;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom:1.25rem;
+}
+
+.email{
+    display: flex;
+    margin:0;
+    background-color: black;
+    border: 1px solid rgb(31, 42, 61);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    height:1.25rem;
+    color:white;
+}
+
+.message{
+    display: flex;
+    margin:0;
+    background-color: black;
+    border: 1px solid rgb(31, 42, 61);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    height:1.25rem;
+    color:white;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.send-button{
+    display: flex;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color:black;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    border-radius: 6px;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 2.5rem;
+    transition: 0.15s;
+}
+.send-button:hover{
+    cursor: pointer;
+    padding:1.25rem;
+    background-color: rgb(225, 223, 223);
+}
+
+::placeholder{
+    --muted-foreground: 215 20.2% 65.1%;
+    color: hsl(var(--muted-foreground));
+}
