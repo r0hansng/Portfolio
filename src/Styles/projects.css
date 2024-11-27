@@ -1,0 +1,261 @@
+*{
+    text-decoration: none;
+    font-family:"Inter", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+    max-width: 100%;
+}
+
+body{
+    background-color: black;
+    margin:0;
+}
+
+div{
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin: 0;
+}
+
+h1{
+    color:white;
+}
+
+#container-project-page{
+    opacity: 1;
+    transform: none;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+#container-cover{
+    position: fixed;
+    z-index: 9999;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    pointer-events: none;
+}
+
+#project-page-header{
+    text-decoration-line: underline;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0;
+}
+
+#project-page-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    gap: 1.25rem;
+}
+
+/* Projects Section Homepage */
+
+#project-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+}
+
+#my-projects{
+    margin-bottom: 1.75rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+#project-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid #1e293b;
+    border-radius: 0.5rem;
+    width: 39%;
+    color: hsl(var(--card-foreground));
+    background-color: hsl(var(--card));
+    --card: 0 0% 0%;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --card-foreground: 210 40% 98%;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    overflow: hidden;
+}
+
+.project-thumbnail{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-description-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.project-description{
+    --muted-foreground: 215 20.2% 65.1%;
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+
+.project-technology-container{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem* var(--tw-space-y-reverse));
+}
+
+.technology-header{
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.shield-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology-name{
+    --foreground: 210 40% 98%;
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.125rem 0.625rem 0.125rem 0.625rem;
+    border: 1px solid #1e293b;
+    border-radius: 9999px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.project-link-button{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem* var(--tw-space-y-reverse));
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-github{
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --radius: 0.5rem;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: hsl(var(--primary));
+    border-radius: calc(var(--radius) - 2px);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.15s;
+}
+
+.project-github:hover{
+    background-color: rgb(225, 223, 223);
+}
+
+.live-demo-button{
+    --background: 0 0% 0%;
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 12px;
+    background-color: hsl(var(--background));
+    border: 1px solid #1e293b;;
+    border-radius: 6px;
+    gap: 0.5rem;
+    align-items: center;
+    display: inline-flex;
+    color: inherit;
+    text-decoration: inherit;
+    transition: 0.15s;
+}
+
+.live-demo-button:hover{
+    background-color: #1e293b;
+}
+
+#more-projects-button{
+    --background: 0 0% 0%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --tw-ring-offset-color: hsl(var(--background));
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: hsl(var(--primary));
+    border-radius: 6px;
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.75rem;
+    text-decoration: inherit;
+    transition: 0.15s;
+}
+
+#more-projects-button:hover{
+    background-color: rgb(225, 223, 223);
+}   
