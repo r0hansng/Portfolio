@@ -1,0 +1,234 @@
+*{
+    text-decoration: none;
+    font-family:"Inter", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+    max-width: 100%;
+}
+
+body{
+    background-color: black;
+    margin:0;
+}
+
+div{
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin: 0;
+}
+
+h1{
+    color:white;
+}
+
+#about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+#about-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+    width: 1000px;
+}
+
+#about-homepage-header{
+    margin:0;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.about-card-content-container{
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.about-card-content-separator-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #1e293b;
+    border-radius: 0.5rem;
+}
+
+#globe-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#connect-links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+#connect-header{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -30px;
+    margin-right: 200px;
+}
+
+#links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.connect-logo{
+    width: 26px;
+    height: 26px;
+}
+
+.connect-site{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.link-content{
+    display: flex;
+    align-items: center;
+    text-decoration: inherit;
+    color: inherit;
+    gap: 0.5rem;
+}
+
+.about-card-content-bottom{
+    height: 16rem;
+    width: 67.6666667%;
+    padding: 0.5rem;
+}
+
+.content-container-about-bottom{
+    border: 1px solid #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.about-card-content-container-bottom{
+    width: 33.33333%;
+    height: 16rem;
+    padding: 0.5rem;
+}
+
+#seprator-learning{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 100%;
+    padding: 1.25rem;
+}
+
+#more-about{
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 0.15s;
+    --tw-ring-offset-color: hsl(var(--background));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: black;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: none;
+    transition: 0.15s;
+}
+
+#more-about:hover{
+    background-color: rgb(225, 223, 223);
+}
+
+/* About HTML */
+
+.about{
+    opacity: 1;
+    transform: none;
+    max-width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:2.5rem;
+    padding: 0.5rem;
+    padding-right:15em;
+    padding-left: 15rem;
+}
+#about-me-description-header{
+    margin: 0;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-left: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.about-html-div-container{
+    border-top: 1px solid rgb(31, 42, 61);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2.5rem;
+    padding: 0.75rem;
+}
+.profile{
+    color:transparent; 
+    margin-top:.75rem; 
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#techstack-header{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height:2.25rem;
+    margin-bottom: 0.5rem;
+}
