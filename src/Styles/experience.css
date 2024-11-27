@@ -1,0 +1,93 @@
+*{
+    text-decoration: none;
+    font-family:"Inter", sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+    max-width: 100%;
+}
+body{
+    background-color: black;
+    margin:0;
+}
+div{
+    display: block;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin: 0;
+}
+h1{
+    color:white;
+}
+
+.experience-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 7rem;
+    margin-top: 200px;
+}
+
+.experience-content-card-section{
+    min-width: 640px;
+    display: flex;
+    position: relative;
+    max-width: 56rem;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experience-card-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 2.5rem;
+}
+
+.experience-card{
+    padding: 1.25rem;
+    width: 100%;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+}
+
+.experience-header{
+    text-transform: capitalize; 
+    font-weight: 600; 
+    font-size: 1.5rem; 
+    line-height: 2rem;
+    margin:0;
+}
+
+.experience-location{
+    font-weight: 400; 
+    margin-top: 0.5rem; 
+    color: white;
+}
+
+.experience-institution{
+    color: white; 
+    margin-top: 0.25rem;
+}
+
+.experience-description{
+    --tw-text-opacity: 1; 
+    color: rgb(55 65 81 / var(--tw-text-opacity)); 
+    font-weight: 400; 
+    margin-top: 1rem;
+}
+
+.experience-duration{
+    font-weight: 400; 
+    margin-top: 1.25rem; 
+    color: white;
+}
